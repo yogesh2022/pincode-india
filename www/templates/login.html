@@ -1,36 +1,21 @@
-<ion-view view-title="Login">
-  <ion-content class="padding">
-    <center>
-    	<img src="img/pincode.png">
-    </center>
-    
-    <div class="list list-inset">
-  		<label class="item item-input">
-    		<input type="text" placeholder="First Name">
-  		</label>
-  		<label class="item item-input">
-    		<input type="text" placeholder="Last Name">
-  		</label>
-  		<p class="text-right">
-             <a href="#/app/forgot-password">Forgot password</a>
-        </p>
-  		<button type="submit" class="button button-block button-stable">Login</button>
-	</div>
-	<div>
-		<center>
-			<a class="button button-stable" href="#/app/signUp">SignUp</a>
-		</center>
-	</div>
-	<div>
-		<!-- <center>
-			<a class="icon ion-social-facebook" href="#"></a>
-			<a class="icon ion-social-googleplus" href="#"></a>			
-		</center> -->
-	</div>
-  </ion-content>
-  <ion-footer-bar>
- 		<div>
- 			<span>Powered by @ HRY Technologies Inc.</span> 
- 		</div>
-  	</ion-footer-bar>
+<ion-view title="Login">
+    <ion-content padding="true" class="has-header">
+        <div class="spacer" style="height: 43px;"></div>
+        <form>
+            <ion-list>
+                <label class="item item-input">
+                    <span class="input-label">Username</span>
+                    <input type="email" placeholder="">
+                </label>
+                <label class="item item-input">
+                    <span class="input-label">Password</span>
+                    <input type="password" placeholder="">
+                </label>
+            </ion-list>
+            <a href="#/app/forgotPassword" class="button button-clear button-positive">Forgot Password</a>
+            <div class="spacer" style="height: 21px;"></div>
+            <button class="button button-stable button-block">Log in</button>
+            <a href="#/app/signup" class="button button-positive button-clear button-block">Or create an account</a>
+        </form>
+    </ion-content>
 </ion-view>
